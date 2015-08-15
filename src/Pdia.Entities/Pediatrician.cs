@@ -12,6 +12,7 @@ namespace Pdia.Entities
         public Guid Id { get; set; }
         public Guid UserProfileId { get; set; }
         public string LicenseNo { get; set; }
+        public bool Deleted { get; set; }
         public virtual UserProfile Profile { get; set; }
     }
 }

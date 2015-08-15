@@ -228,6 +228,10 @@
     <Compile Include="Migrations\201508151529264_appClaim.Designer.cs">
       <DependentUpon>201508151529264_appClaim.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201508151549241_pediatricianUpdate.cs" />
+    <Compile Include="Migrations\201508151549241_pediatricianUpdate.Designer.cs">
+      <DependentUpon>201508151549241_pediatricianUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="WebModule.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -363,6 +367,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201508151529264_appClaim.resx">
       <DependentUpon>201508151529264_appClaim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508151549241_pediatricianUpdate.resx">
+      <DependentUpon>201508151549241_pediatricianUpdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
