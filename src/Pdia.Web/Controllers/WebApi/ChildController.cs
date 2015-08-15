@@ -18,6 +18,9 @@ namespace Pdia.Web.Controllers.WebApi
     {
         IChildService _childService;
 
+        public ChildController()
+        { }
+
         public ChildController(IChildService childService)
         {
             _childService = childService;

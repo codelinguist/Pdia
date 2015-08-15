@@ -9,10 +9,11 @@ namespace Pdia.Web
 {
     public class WebModule : NinjectModule
     {
-        public static IKernel Kernel { get; set; }
         public override void Load()
         {
 
         }
+
+        public static IKernel Kernel { get; set; }
     }
 }

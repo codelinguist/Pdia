@@ -16,7 +16,7 @@ namespace Pdia.Web.Controllers.WebApi
     [RoutePrefix("api/babybook")]
     public class BabyBookController : ApiController
     {
-        private IBabyBookService _babyBookService;
+        IBabyBookService _babyBookService;
 
         public BabyBookController(IBabyBookService babyBookService)
         {

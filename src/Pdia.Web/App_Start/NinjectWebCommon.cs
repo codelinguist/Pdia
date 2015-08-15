@@ -45,6 +45,7 @@ namespace Pdia.Web.App_Start
             var kernel = new StandardKernel();
             try
             {
+                WebModule.Kernel = kernel;
                 kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => bootstrapper.Kernel);
                 kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
 
@@ -67,7 +68,6 @@ namespace Pdia.Web.App_Start
             kernel.Load(typeof(DataLayerModule).Assembly);
             kernel.Load(typeof(ServiceLayerModule).Assembly);
             kernel.Load(typeof(WebModule).Assembly);
-            WebModule.Kernel = kernel;
         }
     }
 }
