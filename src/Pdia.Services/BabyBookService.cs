@@ -47,11 +47,13 @@ namespace Pdia.Services
             }
         }
 
-        public async Task DeleteAsync(Guid id)
+        public async Task DeleteAsync(BabyBook babyBook)
         {
             using (var uow = _uowFac.Create())
             {
-                uow.BabyBookRepository.Delete(id);
+                babyBook.Deleted = true;
+
+                uow.BabyBookRepository.Update(babyBook);
                 await uow.SaveChangesAsync();
             }
         }

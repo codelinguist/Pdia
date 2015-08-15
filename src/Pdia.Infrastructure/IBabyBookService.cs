@@ -12,6 +12,6 @@ namespace Pdia.Infrastructure
         Task<BabyBook> FindAsync(Guid Id);
         Task<BabyBook> InsertAsync(BabyBook babyBook);
         Task<BabyBook> UpdateAsync(BabyBook babyBook);
-        Task DeleteAsync(Guid id);
+        Task DeleteAsync(BabyBook babyBook);
     }
 }
