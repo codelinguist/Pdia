@@ -208,6 +208,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\NinjectWebCommon.cs" />
+    <Compile Include="Controllers\WebApi\UserAccountController.cs" />
     <Compile Include="Controllers\WebApi\ChildController.cs" />
     <Compile Include="Controllers\WebApi\PostController.cs" />
     <Compile Include="Controllers\WebApi\BabyBookController.cs" />
