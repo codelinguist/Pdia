@@ -1,4 +1,5 @@
 ﻿using CoreInfrastructure;
+using Pdia.Entities;
 using Pdia.Infrastructure;
 using System;
 using System.Collections.Generic;
@@ -10,22 +11,28 @@ namespace Pdia.Services
 {
     public class ConnectionService : IConnectionService
     {
-        IUnitOfWorkFactory _uowFac;
-        public ConnectionService(IUnitOfWorkFactory uowFac)
+        IPdiaUnitOfWorkFactory _uowFac;
+        public ConnectionService(IPdiaUnitOfWorkFactory uowFac)
         {
             _uowFac = uowFac;
         }
-        public Task<object> AddPatientAsync(Guid childId, Guid pediaId)
+        public async Task<Patient> AddPatientAsync(Guid childId, Guid pediaId)
+        {
+            using (var uow = _uowFac.Create())
+            {
+                var patient = new Patient() { ChildId = childId, PediaId = pediaId };
+                uow.PatientRepository.Insert(patient);
+                await uow.SaveChangesAsync();
+                return patient;
+            }
+        }
+
+        public Task<List<Patient>> GetPatientsAsync(Guid pediaId)
         {
             throw new NotImplementedException();
         }
 
-        public Task<List<object>> GetPatientsAsync(Guid pediaId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<object>> GetPediatriciansAsync(Guid childId)
+        public Task<List<Patient>> GetPediatriciansAsync(Guid childId)
         {
             throw new NotImplementedException();
         }
