@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 
 namespace Pdia.Entities
 {
-    public class Pediatrician: IEntity
+    public class Parenting:IEntity
     {
         public Guid Id { get; set; }
-        
-        public string LicenseNo { get; set; }
-        public UserProfile Profile { get; set; }
+        public virtual ICollection<UserProfile> Parents { get; set; }
+        public virtual ICollection<Child> Children { get; set; }
     }
 }

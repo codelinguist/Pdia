@@ -22,6 +22,9 @@ namespace Pdia.Entities
         public string HairColor { get; set; }
         public string Photo { get; set; }
 
-        public ICollection<UserProfile> Parents { get; set; }
+        public Guid ParentingId { get; set; }
+        public Parenting Parenting { get; set; }
+
+        public virtual ICollection<Patient> Pediatricians { get; set; }
     }
 }
