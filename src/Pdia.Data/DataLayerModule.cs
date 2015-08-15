@@ -14,7 +14,6 @@ namespace Pdia.Data
         public override void Load()
         {
             this.Bind<IUnitOfWork>().To<PdiaUnitOfWork>();
-            this.Bind<IUnitOfWorkFactory>().To<PdiaUnitOfWorkFactory>();
         }
     }
 }

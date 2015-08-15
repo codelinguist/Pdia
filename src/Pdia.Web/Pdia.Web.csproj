@@ -210,7 +210,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\NinjectWebCommon.cs" />
-<<<<<<< Updated upstream
     <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
     <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
     <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
@@ -242,8 +241,6 @@
     <Compile Include="Controllers\WebApi\UserAccountController.cs" />
     <Compile Include="Controllers\WebApi\ChildController.cs" />
     <Compile Include="Controllers\WebApi\PostController.cs" />
-=======
->>>>>>> Stashed changes
     <Compile Include="Controllers\WebApi\BabyBookController.cs" />
     <Compile Include="Controllers\WebApi\ClinicController.cs" />
     <Compile Include="Controllers\WebApi\PageController.cs" />
