@@ -27,6 +27,7 @@ namespace Pdia.Data
         public IRepository<Patient> _patientRepositry;
         public IRepository<Pediatrician> _pediatricianRepository;
         public IRepository<Post> _postRepository;
+        public IRepository<UserAccount> _userAccountRepository;
         public IRepository<UserProfile> _userProfileRepository;
 
         public IRepository<AppClaim> AppClaimRepository
@@ -134,6 +135,18 @@ namespace Pdia.Data
                     _postRepository = new EntityRepository<Post>(_dbContext);
                 }
                 return _postRepository;
+            }
+        }
+
+        public IRepository<UserAccount> UserAccountRepository
+        {
+            get
+            {
+                if (_userAccountRepository == null)
+                {
+                    _userAccountRepository = new EntityRepository<UserAccount>(_dbContext);
+                }
+                return _userAccountRepository;
             }
         }
 

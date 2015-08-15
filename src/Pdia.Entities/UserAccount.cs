@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoreInfrastructure;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 namespace Pdia.Entities
 {
     [Table("AspNetUsers")]
-    public class UserAccount
+    public class UserAccount : IEntity
     {
         public string Id { get; set; }
         public string UserName { get; set; }

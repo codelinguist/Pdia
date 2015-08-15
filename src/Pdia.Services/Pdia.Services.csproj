@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="BabyBookService.cs" />
     <Compile Include="AuthorizationService.cs" />
+    <Compile Include="UserAccountService.cs" />
     <Compile Include="PostService.cs" />
     <Compile Include="PatientService.cs" />
     <Compile Include="ParentingService.cs" />
