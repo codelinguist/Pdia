@@ -13,6 +13,6 @@ namespace Pdia.Infrastructure
         Task<Child> GetChildProfileAsync(Guid pediaId);
         Task<UserProfile> GetPediaProfileAsync(Guid pediaId);//TODO: should include 
         Task<UserProfile> GetParentAsync();
-        Task<List<Child>> GetChildrenAsync()
+        Task<List<Child>> GetChildrenAsync();
     }
 }

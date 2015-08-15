@@ -11,6 +11,8 @@ namespace Pdia.Data
         }
 
         public DbSet<Child> Children { get; set; }
-        public DbSet<Patient> Patients { get; set; }
+        //public DbSet<Patient> Patients { get; set; }
+
+        public DbSet<UserAccount> UserAccounts { get; set; }
     }
 }

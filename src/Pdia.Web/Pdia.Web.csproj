@@ -208,6 +208,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\NinjectWebCommon.cs" />
+    <Compile Include="Migrations\201508151301264_InitialCreate.cs" />
+    <Compile Include="Migrations\201508151301264_InitialCreate.Designer.cs">
+      <DependentUpon>201508151301264_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508151459540_UserAccount.cs" />
+    <Compile Include="Migrations\201508151459540_UserAccount.Designer.cs">
+      <DependentUpon>201508151459540_UserAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508151502293_ChildrenEntity.cs" />
+    <Compile Include="Migrations\201508151502293_ChildrenEntity.Designer.cs">
+      <DependentUpon>201508151502293_ChildrenEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="WebModule.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -326,6 +339,17 @@
       <Project>{4a1c169d-9304-40ca-9a78-861cabc748d2}</Project>
       <Name>Pdia.Services</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201508151301264_InitialCreate.resx">
+      <DependentUpon>201508151301264_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508151459540_UserAccount.resx">
+      <DependentUpon>201508151459540_UserAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508151502293_ChildrenEntity.resx">
+      <DependentUpon>201508151502293_ChildrenEntity.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

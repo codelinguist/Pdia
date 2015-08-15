@@ -46,7 +46,7 @@
     <Compile Include="IPdiaUnitOfWork.cs" />
     <Compile Include="IPdiaUnitOfWorkFactory.cs" />
     <Compile Include="IPediatricianService.cs" />
-    <Compile Include="IUserService.cs" />
+    <Compile Include="UserProfileService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
