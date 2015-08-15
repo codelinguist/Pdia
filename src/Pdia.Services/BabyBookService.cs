@@ -8,50 +8,50 @@ using System.Threading.Tasks;
 
 namespace Pdia.Services
 {
-    public class AppClaimService : IAppClaimService
+    public class BabyBookService : IBabyBookService
     {
         IPdiaUnitOfWorkFactory _uowFac;
-        public AppClaimService(IPdiaUnitOfWorkFactory uowFac)
+        public BabyBookService(IPdiaUnitOfWorkFactory uowFac)
         {
             _uowFac = uowFac;
         }
-        public async Task<AppClaim> FindAsync(Guid id)
+        public async Task<BabyBook> FindAsync(Guid id)
         {
             using (var uow = _uowFac.Create())
             {
-                return (await uow.AppClaimRepository.ItemsAsync(q =>q.Id == id)).FirstOrDefault();
+                return (await uow.BabyBookRepository.ItemsAsync(q =>q.Id == id)).FirstOrDefault();
             }
         }
 
-        public async Task<AppClaim> InsertAsync(AppClaim appClaim)
+        public async Task<BabyBook> InsertAsync(BabyBook babyBook)
         {
             using (var uow = _uowFac.Create())
             {
-                appClaim.Id = Guid.NewGuid();
+                babyBook.Id = Guid.NewGuid();
 
-                uow.AppClaimRepository.Insert(appClaim);
+                uow.BabyBookRepository.Insert(babyBook);
                 await uow.SaveChangesAsync();
 
-                return appClaim;
+                return babyBook;
             }
         }
 
-        public async Task<AppClaim> UpdateAsync(AppClaim appClaim)
+        public async Task<BabyBook> UpdateAsync(BabyBook babyBook)
         {
             using (var uow = _uowFac.Create())
             {
-                uow.AppClaimRepository.Update(appClaim);
+                uow.BabyBookRepository.Update(babyBook);
                 await uow.SaveChangesAsync();
 
-                return appClaim;
+                return babyBook;
             }
         }
 
-        public async Task DeleteAsync(AppClaim appClaim)
+        public async Task DeleteAsync(Guid id)
         {
             using (var uow = _uowFac.Create())
             {
-                uow.AppClaimRepository.Delete(appClaim.Id);
+                uow.BabyBookRepository.Delete(id);
                 await uow.SaveChangesAsync();
             }
         }

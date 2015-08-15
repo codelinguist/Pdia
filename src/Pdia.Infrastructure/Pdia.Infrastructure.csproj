@@ -40,12 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IBabyBookService.cs" />
     <Compile Include="IAuthorizationService.cs" />
     <Compile Include="IChildService.cs" />
     <Compile Include="IConnectionService.cs" />
     <Compile Include="IPdiaUnitOfWork.cs" />
     <Compile Include="IPdiaUnitOfWorkFactory.cs" />
-    <Compile Include="IAppClaimService.cs" />
     <Compile Include="IPediatricianService.cs" />
     <Compile Include="IUserProfileService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
