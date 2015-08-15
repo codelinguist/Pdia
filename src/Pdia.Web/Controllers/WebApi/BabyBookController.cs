@@ -28,12 +28,81 @@ namespace Pdia.Web.Controllers.WebApi
         /// </summary>
         /// <param name="babyBookId"></param>
         /// <returns></returns>
-        [Route("{babybookId}")]
+        [Route("{babyBookId}")]
         [HttpGet]
         [ResponseType(typeof(BabyBook))]
         public async Task<IHttpActionResult> GetById(Guid babyBookId)
         {
             return Ok(await _babyBookService.FindAsync(babyBookId));
+        }
+
+        /// <summary>
+        /// Create BabyBook
+        /// </summary>
+        /// <param name="babyBook"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [ResponseType(typeof(BabyBook))]
+        public async Task<IHttpActionResult> PostBabyBook(BabyBook babyBook)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
+
+                var result = await _babyBookService.InsertAsync(babyBook);
+                return Ok(result);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Update BabyBook Info
+        /// </summary>
+        /// <param name="babyBook"></param>
+        /// <returns></returns>
+        [HttpPut]
+        [ResponseType(typeof(Pediatrician))]
+        public async Task<IHttpActionResult> PutBabyBook(BabyBook babyBook)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
+
+                if (babyBook.Id == Guid.Empty)
+                    return BadRequest();
+
+                var result = await _babyBookService.UpdateAsync(babyBook);
+                return Ok(result);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Flag BabyBook as deleted
+        /// </summary>
+        /// <param name="babyBookId"></param>
+        /// <returns></returns>
+        [Route("{babyBookId}")]
+        [HttpDelete]
+        public async Task<IHttpActionResult> DeleteAsync(Guid babyBookId)
+        {
+            if (babyBookId == Guid.Empty)
+                return NotFound();
+
+            BabyBook babyBook = await _babyBookService.FindAsync(babyBookId);
+            if (babyBook == null)
+                return NotFound();
+
+            await _babyBookService.DeleteAsync(babyBook);
+            return StatusCode(HttpStatusCode.NoContent);
         }
     }
 }
