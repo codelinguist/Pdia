@@ -24,6 +24,7 @@ namespace Pdia.Services
                 var patient = new Patient() { ChildId = childId, PediaId = pediaId };
                 uow.PatientRepository.Insert(patient);
                 await uow.SaveChangesAsync();
+                //var list = await uow.PatientRepository.Items.Include(p => p.Pedia).ToListAsync();
                 return patient;
             }
         }
