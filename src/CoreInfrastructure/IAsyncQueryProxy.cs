@@ -26,5 +26,9 @@ namespace CoreInfrastructure
         Task<int> CountAsync<TEntity>(IQueryable<TEntity> source, Expression<Func<TEntity, bool>> predicate, CancellationToken cancellationToken) where TEntity : IEntity;
         Task ForEachAsync<TEntity>(IQueryable<TEntity> source, Action<TEntity> action) where TEntity : IEntity;
         Task ForEachAsync<TEntity>(IQueryable<TEntity> source, Action<TEntity> action, CancellationToken cancellationToken) where TEntity : IEntity;
+
+        IQueryable Include(IQueryable source, string path);
+        IQueryable<TEntity> Include<TEntity>(IQueryable<TEntity> source, string path) where TEntity : IEntity;
+        IQueryable<TEntity> Include<TEntity, TProperty>(IQueryable<TEntity> source, Expression<Func<TEntity, TProperty>> path) where TEntity : IEntity;
     }
 }
