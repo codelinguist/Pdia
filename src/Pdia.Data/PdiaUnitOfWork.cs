@@ -18,6 +18,7 @@ namespace Pdia.Data
             _dbContext = new PdiaDbContext();
         }
 
+        public IRepository<AppClaim> _appClaimRepository;
         public IRepository<BabyBook> _babyBookRepository;
         public IRepository<Child> _childRepository;
         public IRepository<Clinic> _clinicRepository;
@@ -26,6 +27,18 @@ namespace Pdia.Data
         public IRepository<Pediatrician> _pediatricianRepository;
         public IRepository<Post> _postRepository;
         public IRepository<UserProfile> _userProfileRepository;
+
+        public IRepository<AppClaim> AppClaimRepository
+        {
+            get
+            {
+                if (_appClaimRepository == null)
+                {
+                    _appClaimRepository = new EntityRepository<AppClaim>(_dbContext);
+                }
+                return _appClaimRepository;
+            }
+        }
 
         public IRepository<BabyBook> BabyBookRepository
         {

@@ -43,9 +43,15 @@
     <Compile Include="IAuthorizationService.cs" />
     <Compile Include="IChildService.cs" />
     <Compile Include="IConnectionService.cs" />
+    <Compile Include="IPatientService.cs" />
     <Compile Include="IPdiaUnitOfWork.cs" />
+<<<<<<< HEAD
+    <Compile Include="IPdiaUnitOfWorkFactory.cs" />
+    <Compile Include="IPediatricianService.cs" />
+=======
     <Compile Include="IPediatricianService.cs" />
     <Compile Include="IPdiaUnitOfWorkFactory.cs" />
+>>>>>>> origin/master
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

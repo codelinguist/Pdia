@@ -14,7 +14,7 @@ namespace Pdia.Entities
         public Guid PediaId { get; set; }
         public Guid ChildId { get; set; }
 
-        public virtual Child PatientProfile { get; set; }
+        public virtual Child ChildProfile { get; set; }
         public virtual Pediatrician Pedia { get; set; }
     }
 }

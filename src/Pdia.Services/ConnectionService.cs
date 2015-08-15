@@ -29,19 +29,29 @@ namespace Pdia.Services
             }
         }
 
-        public Task<List<Patient>> GetPatientsAsync(Guid pediaId)
+        public async Task<List<Patient>> GetPatientsAsync(Guid pediaId)
         {
-            throw new NotImplementedException();
+            using (var uow = _uowFac.Create())
+            {
+                return await uow.PatientRepository.Items.Where(p => p.PediaId == pediaId).Include(p => p.ChildProfile).ToListAsync();
+            }
         }
 
-        public Task<List<Patient>> GetPediatriciansAsync(Guid childId)
+        public async Task<List<Patient>> GetPediatriciansAsync(Guid childId)
         {
-            throw new NotImplementedException();
+            using (var uow = _uowFac.Create())
+            {
+                return await uow.PatientRepository.Items.Where(p => p.ChildId == childId).Include(p => p.Pedia).ToListAsync();
+            }
         }
 
-        public Task RemovePatientAsync(Guid patientId)
+        public async Task RemovePatientAsync(Guid patientId)
         {
-            throw new NotImplementedException();
+            using (var uow = _uowFac.Create())
+            {
+                var patient = uow.PatientRepository.Find(patientId);
+                await uow.SaveChangesAsync();
+            }
         }
     }
 }
