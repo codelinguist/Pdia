@@ -16,7 +16,7 @@ namespace Pdia.Services
             _uowFac = uowFac;
         }
 
-        public async Task<Child> FindChildAsync(Guid Id)
+        public async Task<Child> FindAsync(Guid Id)
         {
             using (var uow = _uowFac.Create())
             {
@@ -24,14 +24,38 @@ namespace Pdia.Services
             }
         }
 
-        public async Task<Child> InsertChildAsync(Child child)
+        public async Task<Child> InsertAsync(Child child)
         {
             using (var uow = _uowFac.Create())
             {
                 child.Id = new Guid();
+
                 uow.ChildRepository.Insert(child);
                 await uow.SaveChangesAsync();
+
                 return child;
+            }
+        }
+
+        public async Task<Child> UpdateAsync(Child child)
+        {
+            using (var uow = _uowFac.Create())
+            {
+                uow.ChildRepository.Update(child);
+                await uow.SaveChangesAsync();
+
+                return child;
+            }
+        }
+
+        public async Task DeleteAsync(Child child)
+        {
+            using (var uow = _uowFac.Create())
+            {
+                child.Deleted = true;
+
+                uow.ChildRepository.Update(child);
+                await uow.SaveChangesAsync();
             }
         }
     }

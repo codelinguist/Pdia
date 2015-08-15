@@ -22,6 +22,7 @@ namespace Pdia.Entities
         public string EyeColor { get; set; }
         public string HairColor { get; set; }
         public string Photo { get; set; }
+        public bool Deleted { get; set; }
 
         public Parenting Parent { get; set; }
     }

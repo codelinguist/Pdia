@@ -9,7 +9,9 @@ namespace Pdia.Infrastructure
 {
     public interface IChildService
     {
-        Task<Child> FindChildAsync(Guid Id);
-        Task<Child> InsertChildAsync(Child child);
+        Task<Child> FindAsync(Guid Id);
+        Task<Child> InsertAsync(Child child);
+        Task<Child> UpdateAsync(Child child);
+        Task DeleteAsync(Child child);
     }
 }
