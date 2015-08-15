@@ -40,8 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BabyBook.cs" />
     <Compile Include="Child.cs" />
     <Compile Include="Clinic.cs" />
+    <Compile Include="Page.cs" />
     <Compile Include="Patient.cs" />
     <Compile Include="Pediatrician.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

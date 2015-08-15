@@ -12,6 +12,8 @@ namespace Pdia.Entities
    
         public Guid BookId { get; set; }
         public Guid PediatricianId { get; set; }
+        public decimal Weight { get; set; }
+        public decimal Length { get; set; }
         public string Notes { get; set; }
         public DateTime DateVisited { get; set; }
 
