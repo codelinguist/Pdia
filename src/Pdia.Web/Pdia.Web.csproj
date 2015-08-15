@@ -209,6 +209,7 @@
   <ItemGroup>
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="Controllers\WebApi\BabyBookController.cs" />
+    <Compile Include="Controllers\WebApi\ClinicController.cs" />
     <Compile Include="Migrations\201508151301264_InitialCreate.cs" />
     <Compile Include="Migrations\201508151301264_InitialCreate.Designer.cs">
       <DependentUpon>201508151301264_InitialCreate.cs</DependentUpon>
