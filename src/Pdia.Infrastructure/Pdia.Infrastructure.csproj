@@ -42,7 +42,18 @@
   <ItemGroup>
     <Compile Include="IChildService.cs" />
     <Compile Include="IConnectionService.cs" />
+    <Compile Include="IPdiaUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoreInfrastructure\CoreInfrastructure.csproj">
+      <Project>{bea99904-c377-45e8-acfe-7bf107b790ae}</Project>
+      <Name>CoreInfrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pdia.Entities\Pdia.Entities.csproj">
+      <Project>{1946ac7a-06e5-4cfe-b196-0102dfa82579}</Project>
+      <Name>Pdia.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
