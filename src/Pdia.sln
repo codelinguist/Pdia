@@ -15,6 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreInfra", "CoreInfra", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pdia.Entities", "Pdia.Entities\Pdia.Entities.csproj", "{1946AC7A-06E5-4CFE-B196-0102DFA82579}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pdia.Services", "Pdia.Services\Pdia.Services.csproj", "{4A1C169D-9304-40CA-9A78-861CABC748D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pdia.Infrastructure", "Pdia.Infrastructure\Pdia.Infrastructure.csproj", "{5CB86ABC-E744-41F0-8CC8-E0323364ACCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,14 @@ Global
 		{1946AC7A-06E5-4CFE-B196-0102DFA82579}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1946AC7A-06E5-4CFE-B196-0102DFA82579}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1946AC7A-06E5-4CFE-B196-0102DFA82579}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A1C169D-9304-40CA-9A78-861CABC748D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A1C169D-9304-40CA-9A78-861CABC748D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A1C169D-9304-40CA-9A78-861CABC748D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A1C169D-9304-40CA-9A78-861CABC748D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CB86ABC-E744-41F0-8CC8-E0323364ACCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CB86ABC-E744-41F0-8CC8-E0323364ACCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CB86ABC-E744-41F0-8CC8-E0323364ACCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CB86ABC-E744-41F0-8CC8-E0323364ACCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
