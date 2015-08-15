@@ -10,8 +10,13 @@ namespace Pdia.Infrastructure
 {
     public interface IPdiaUnitOfWork:IUnitOfWork
     {
+        IRepository<BabyBook> BabyBookRepository { get; }
         IRepository<Child> ChildRepository { get; }
-        IRepository<Pediatrician> PediatricianRepository { get; }
+        IRepository<Clinic> ClinicRepository { get; }
+        IRepository<Page> PageRepository { get; }
         IRepository<Patient> PatientRepository { get; }
+        IRepository<Pediatrician> PediatricianRepository { get; }
+        IRepository<Post> PostRepository { get; }
+        IRepository<UserProfile> UserProfileRepository { get; }
     }
 }
