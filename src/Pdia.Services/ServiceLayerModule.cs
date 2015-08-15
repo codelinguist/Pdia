@@ -22,6 +22,7 @@ namespace Pdia.Services
             this.Bind<IPatientService>().To<PatientService>().InSingletonScope();
             this.Bind<IPediatricianService>().To<PediatricianService>().InSingletonScope();
             this.Bind<IPostService>().To<PostService>().InSingletonScope();
+            this.Bind<IUserAccountService>().To<UserAccountService>().InSingletonScope();
         }
     }
 }

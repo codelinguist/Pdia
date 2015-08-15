@@ -699,6 +699,35 @@
             <param name="parentingId"></param>
             <returns></returns>
         </member>
+        <member name="M:Pdia.Web.Controllers.WebApi.PatientController.GetById(System.Guid)">
+            <summary>
+            Get Patients by Pedia Id
+            </summary>
+            <param name="pediaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pdia.Web.Controllers.WebApi.PatientController.GetWithPediaAsync(System.Guid)">
+            <summary>
+            Create Patients with Pediatrician
+            </summary>
+            <param name="childId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pdia.Web.Controllers.WebApi.PatientController.PostPatient(System.Guid,System.Guid)">
+            <summary>
+            Create Patient Entry
+            </summary>
+            <param name="childId"></param>
+            <param name="pediaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pdia.Web.Controllers.WebApi.PatientController.DeleteAsync(System.Guid)">
+            <summary>
+            Delete Patient entry
+            </summary>
+            <param name="patientId"></param>
+            <returns></returns>
+        </member>
         <member name="M:Pdia.Web.Controllers.WebApi.PediatricianController.GetById(System.Guid)">
             <summary>
             Get Pediatrician Information by Id
