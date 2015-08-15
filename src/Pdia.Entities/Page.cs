@@ -17,6 +17,7 @@ namespace Pdia.Entities
         public decimal Length { get; set; }
         public string Notes { get; set; }
         public DateTime DateVisited { get; set; }
+        public bool Deleted { get; set; }
 
         public virtual BabyBook BabyBook { get; set; }
         public virtual Pediatrician Pedia { get; set; }

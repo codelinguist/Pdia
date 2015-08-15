@@ -16,6 +16,7 @@ namespace Pdia.Entities
         public DateTime BirthDate { get; set; }
         public Gender Gender { get; set; }
         public string Photo { get; set; }
+        public bool Deleted { get; set; }
         public virtual ICollection<Parenting> Parentings { get; set; }
         //public Guid AsPediatricianId { get; set; }
         //public virtual Pediatrician AsPediatrician { get; set; }
