@@ -8,7 +8,7 @@ namespace Pdia.Entities.Enums
 {
     public class Enums
     {
-        public enum PrivacySettings : int
+        public enum PrivacySetting : int
         {
             Public = 0,
             OnlyMe = 1
