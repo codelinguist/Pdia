@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="IBabyBookService.cs" />
     <Compile Include="IAuthorizationService.cs" />
+    <Compile Include="IClinicService.cs" />
     <Compile Include="IChildService.cs" />
     <Compile Include="IConnectionService.cs" />
     <Compile Include="IPdiaUnitOfWork.cs" />
