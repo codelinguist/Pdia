@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace CoreInfrastructure.EntityFramework
 {
     public sealed class EntityRepository<T> : IRepository<T>
-        where T : class
+        where T : class, IEntity
     {
         DbContext _context;
         public EntityRepository(DbContext context)

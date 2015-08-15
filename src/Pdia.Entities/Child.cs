@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoreInfrastructure;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace Pdia.Entities
     {
         Male, Female
     }
-    public class Child
+    public class Child: IEntity
     {
         public Guid Id { get; set; }
         public string FirstName { get; set; }

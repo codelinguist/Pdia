@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoreInfrastructure;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Pdia.Entities
 {
-    public class UserProfile
+    public class UserProfile: IEntity
     {
         public Guid Id { get; set; }
 
