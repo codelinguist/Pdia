@@ -66,7 +66,19 @@ namespace CoreInfrastructure
                 
             return Kernel.Value.Get<IAsyncQueryProxy>().ForEachAsync(source, action, cancellationToken);
         }
+        public static IQueryable Include(this IQueryable source, string path)
+        {
+            return Kernel.Value.Get<IAsyncQueryProxy>().Include(source, path);
+        }
 
-        //TODO: INCLUDE methods
+        public static IQueryable<TEntity> Include<TEntity>(this IQueryable<TEntity> source, string path) where TEntity : IEntity
+        {
+            return Kernel.Value.Get<IAsyncQueryProxy>().Include(source, path);
+        }
+
+        public static IQueryable<TEntity> Include<TEntity, TProperty>(this IQueryable<TEntity> source, Expression<Func<TEntity, TProperty>> path) where TEntity : IEntity
+        {
+            return Kernel.Value.Get<IAsyncQueryProxy>().Include(source, path);
+        }
     }
 }

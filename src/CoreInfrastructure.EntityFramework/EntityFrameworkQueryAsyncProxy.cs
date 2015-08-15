@@ -42,6 +42,21 @@ namespace CoreInfrastructure.EntityFramework
             return QueryableExtensions.ForEachAsync(source, action, cancellationToken);
         }
 
+        public IQueryable Include(IQueryable source, string path)
+        {
+            return QueryableExtensions.Include(source, path);
+        }
+
+        public IQueryable<TEntity> Include<TEntity>(IQueryable<TEntity> source, string path) where TEntity : IEntity
+        {
+            return QueryableExtensions.Include(source, path);
+        }
+
+        public IQueryable<TEntity> Include<TEntity, TProperty>(IQueryable<TEntity> source, Expression<Func<TEntity, TProperty>> path) where TEntity : IEntity
+        {
+            return QueryableExtensions.Include(source, path);
+        }
+
         public Task<List<TEntity>> ToListAsync<TEntity>(IQueryable<TEntity> source) where TEntity : IEntity
         {
 
@@ -52,6 +67,6 @@ namespace CoreInfrastructure.EntityFramework
         {
             return QueryableExtensions.ToListAsync(source, cancellationToken);
         }
-
+        
     }
 }
