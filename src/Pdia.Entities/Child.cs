@@ -17,8 +17,12 @@ namespace Pdia.Entities
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
         public Gender Gender { get; set; }
+        public decimal Weight { get; set; }
+        public decimal Length { get; set; }
+        public string EyeColor { get; set; }
+        public string HairColor { get; set; }
+        public string Photo { get; set; }
 
         public ICollection<UserProfile> Parents { get; set; }
-        public ICollection<Pediatrician> Pediatricians { get; set; }
     }
 }
