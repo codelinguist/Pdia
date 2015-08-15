@@ -49,7 +49,7 @@ namespace Pdia.Services
         {
             using (var uow = _uowFac.Create())
             {
-                var patient = uow.PatientRepository.Find(patientId);
+                uow.PatientRepository.Delete(patientId);
                 await uow.SaveChangesAsync();
             }
         }
