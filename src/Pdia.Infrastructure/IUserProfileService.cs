@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Pdia.Infrastructure
 {
-    public interface IProfileService
+    public interface IUserProfileService
     {
 
         Task<Child> GetChildProfileAsync(Guid pediaId);

@@ -45,8 +45,9 @@
     <Compile Include="IConnectionService.cs" />
     <Compile Include="IPdiaUnitOfWork.cs" />
     <Compile Include="IPdiaUnitOfWorkFactory.cs" />
+    <Compile Include="IAppClaimService.cs" />
     <Compile Include="IPediatricianService.cs" />
-    <Compile Include="UserProfileService.cs" />
+    <Compile Include="IUserProfileService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
