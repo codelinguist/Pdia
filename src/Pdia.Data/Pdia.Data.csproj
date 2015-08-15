@@ -30,11 +30,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -45,11 +54,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataLayerModule.cs" />
+    <Compile Include="PdiaDbContext.cs" />
     <Compile Include="PdiaUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoreInfrastructure\CoreInfrastructure.csproj">
+      <Project>{bea99904-c377-45e8-acfe-7bf107b790ae}</Project>
+      <Name>CoreInfrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pdia.Entities\Pdia.Entities.csproj">
+      <Project>{1946ac7a-06e5-4cfe-b196-0102dfa82579}</Project>
+      <Name>Pdia.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pdia.Infrastructure\Pdia.Infrastructure.csproj">
+      <Project>{5cb86abc-e744-41f0-8cc8-e0323364acca}</Project>
+      <Name>Pdia.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
