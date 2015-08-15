@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pdia.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,10 +9,10 @@ namespace Pdia.Infrastructure
 {
     public interface IConnectionService
     {
-        Task<object> AddPatientAsync(Guid childId, Guid pediaId);
+        Task<Patient> AddPatientAsync(Guid childId, Guid pediaId);
         Task RemovePatientAsync(Guid patientId);
-        Task<List<object>> GetPatientsAsync(Guid pediaId);
-        Task<List<object>> GetPediatriciansAsync(Guid childId);
+        Task<List<Patient>> GetPatientsAsync(Guid pediaId);
+        Task<List<Patient>> GetPediatriciansAsync(Guid childId);
         
     }
 }
