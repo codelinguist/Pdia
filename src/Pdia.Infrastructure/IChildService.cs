@@ -8,5 +8,6 @@ namespace Pdia.Infrastructure
 {
     public interface IChildService
     {
+
     }
 }
