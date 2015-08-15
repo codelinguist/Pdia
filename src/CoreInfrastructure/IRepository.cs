@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CoreInfrastructure
 {
-    public interface IRepository<TEntity> where TEntity : IEntity
+    public interface IRepository<TEntity> 
     {
         IQueryable<TEntity> Items { get; }
         Task<List<TEntity>> ItemsAsync(Expression<Func<TEntity, bool>> predicate = null);

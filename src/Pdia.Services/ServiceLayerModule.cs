@@ -12,6 +12,7 @@ namespace Pdia.Services
     {
         public override void Load()
         {
+            this.Bind<IConnectionService>().To<ConnectionService>().InSingletonScope();
         }
     }
 }
