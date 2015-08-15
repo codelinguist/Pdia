@@ -11,6 +11,8 @@ namespace Pdia.Web.App_Start
     using Ninject;
     using Ninject.Web.Common;
     using CoreArchitecture.Mvc;
+    using Pdia.Data;
+    using Pdia.Services;
 
     public static class NinjectWebCommon
     {
@@ -62,6 +64,10 @@ namespace Pdia.Web.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Load(typeof(DataLayerModule).Assembly);
+            kernel.Load(typeof(ServiceLayerModule).Assembly);
+            kernel.Load(typeof(WebModule).Assembly);
+            WebModule.Kernel = kernel;
         }
     }
 }
