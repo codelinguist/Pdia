@@ -10,6 +10,7 @@ namespace Pdia.Infrastructure
 {
     public interface IPdiaUnitOfWork:IUnitOfWork
     {
+        IRepository<AppClaim> AppClaimRepository { get; }
         IRepository<BabyBook> BabyBookRepository { get; }
         IRepository<Child> ChildRepository { get; }
         IRepository<Clinic> ClinicRepository { get; }
