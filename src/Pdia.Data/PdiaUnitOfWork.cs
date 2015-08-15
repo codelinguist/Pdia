@@ -24,6 +24,7 @@ namespace Pdia.Data
         public IRepository<Page> _pageRepository;
         public IRepository<Patient> _patientRepositry;
         public IRepository<Pediatrician> _pediatricianRepository;
+        public IRepository<Post> _postRepository;
         public IRepository<UserProfile> _userProfileRepository;
 
         public IRepository<BabyBook> BabyBookRepository
@@ -95,6 +96,18 @@ namespace Pdia.Data
                     _pediatricianRepository = new EntityRepository<Pediatrician>(_dbContext);
                 }
                 return _pediatricianRepository;
+            }
+        }
+
+        public IRepository<Post> PostRepository
+        {
+            get
+            {
+                if (_postRepository == null)
+                {
+                    _postRepository = new EntityRepository<Post>(_dbContext);
+                }
+                return _postRepository;
             }
         }
 

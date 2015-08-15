@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pdia.Infrastructure", "Pdia
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pdia.Data", "Pdia.Data\Pdia.Data.csproj", "{AC71E7E1-AB92-43DF-B315-E9E7EE7943EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pdia.Web", "Pdia.Web\Pdia.Web.csproj", "{8EC076E8-C6B5-4E68-96DA-BE7E5D1EDF01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{AC71E7E1-AB92-43DF-B315-E9E7EE7943EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC71E7E1-AB92-43DF-B315-E9E7EE7943EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC71E7E1-AB92-43DF-B315-E9E7EE7943EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EC076E8-C6B5-4E68-96DA-BE7E5D1EDF01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EC076E8-C6B5-4E68-96DA-BE7E5D1EDF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EC076E8-C6B5-4E68-96DA-BE7E5D1EDF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EC076E8-C6B5-4E68-96DA-BE7E5D1EDF01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
