@@ -220,6 +220,14 @@
     <Compile Include="Migrations\201508151502293_ChildrenEntity.Designer.cs">
       <DependentUpon>201508151502293_ChildrenEntity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201508151524165_userProfileAndPediatrician.cs" />
+    <Compile Include="Migrations\201508151524165_userProfileAndPediatrician.Designer.cs">
+      <DependentUpon>201508151524165_userProfileAndPediatrician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508151529264_appClaim.cs" />
+    <Compile Include="Migrations\201508151529264_appClaim.Designer.cs">
+      <DependentUpon>201508151529264_appClaim.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="WebModule.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -349,6 +357,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201508151502293_ChildrenEntity.resx">
       <DependentUpon>201508151502293_ChildrenEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508151524165_userProfileAndPediatrician.resx">
+      <DependentUpon>201508151524165_userProfileAndPediatrician.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508151529264_appClaim.resx">
+      <DependentUpon>201508151529264_appClaim.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

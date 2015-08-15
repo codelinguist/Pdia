@@ -17,7 +17,7 @@ namespace Pdia.Entities
         public Gender Gender { get; set; }
         public string Photo { get; set; }
         public virtual ICollection<Parenting> Parentings { get; set; }
-        public Guid AsPediatricianId { get; set; }
-        public virtual Pediatrician AsPediatrician { get; set; }
+        //public Guid AsPediatricianId { get; set; }
+        //public virtual Pediatrician AsPediatrician { get; set; }
     }
 }

@@ -14,6 +14,7 @@ namespace Pdia.Entities
     public class Child: IEntity
     {
         public Guid Id { get; set; }
+        public Guid ParentingId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
@@ -22,9 +23,6 @@ namespace Pdia.Entities
         public string HairColor { get; set; }
         public string Photo { get; set; }
 
-        //public Guid ParentingId { get; set; }
-        //public Parenting Parent { get; set; }
-
-        //public virtual ICollection<Patient> Pediatricians { get; set; }
+        public Parenting Parent { get; set; }
     }
 }

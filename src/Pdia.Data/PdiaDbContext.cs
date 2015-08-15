@@ -10,9 +10,12 @@ namespace Pdia.Data
 
         }
 
-        public DbSet<Child> Children { get; set; }
-        //public DbSet<Patient> Patients { get; set; }
-
+        public DbSet<AppClaim> AppClaims { get; set; }
         public DbSet<UserAccount> UserAccounts { get; set; }
+        public DbSet<UserProfile> UserProfiles { get; set; }
+        public DbSet<Pediatrician> Pediatricians { get; set; }
+        public DbSet<Parenting> Parentings { get; set; }
+        public DbSet<Patient> Patients { get; set; }
+        public DbSet<Child> Children { get; set; }
     }
 }

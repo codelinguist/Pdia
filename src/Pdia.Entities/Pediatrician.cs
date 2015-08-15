@@ -10,8 +10,8 @@ namespace Pdia.Entities
     public class Pediatrician: IEntity
     {
         public Guid Id { get; set; }
-        
+        public Guid UserProfileId { get; set; }
         public string LicenseNo { get; set; }
-        public UserProfile Profile { get; set; }
+        public virtual UserProfile Profile { get; set; }
     }
 }
