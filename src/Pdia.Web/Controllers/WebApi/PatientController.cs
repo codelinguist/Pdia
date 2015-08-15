@@ -10,16 +10,14 @@ using System.Web.Http;
 namespace Pdia.Web.Controllers.WebApi
 {
     [RequireToken]
-    [RoutePrefix("api/pediatricians")]
-    public class PediatricianController : ApiController
+    [RoutePrefix("api/patients")]
+    public class PatientController : ApiController
     {
-        IPediatricianService _pediatricianService;
+        IPatientService _patientService;
 
-        public PediatricianController(IPediatricianService pediatricianService)
+        public PatientController(IPatientService patientService)
         {
-            _pediatricianService = pediatricianService;
+            _patientService = patientService;
         }
-
-
     }
 }
