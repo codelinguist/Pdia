@@ -6,16 +6,27 @@ using System.Text;
 using System.Threading.Tasks;
 using CoreInfrastructure;
 using Pdia.Entities;
+using CoreInfrastructure.EntityFramework;
 
 namespace Pdia.Data
 {
     public class PdiaUnitOfWork : IPdiaUnitOfWork
     {
+        private PdiaDbContext _dbContext;
+        public PdiaUnitOfWork()
+        {
+            _dbContext = new PdiaDbContext();
+        }
+        public IRepository<Child> _childRepository;
         public IRepository<Child> ChildRepository
         {
             get
             {
-                throw new NotImplementedException();
+                if (_childRepository == null)
+                {
+                    _childRepository = new EntityRepository<Child>(_dbContext);
+                }
+                return _childRepository;
             }
         }
 
