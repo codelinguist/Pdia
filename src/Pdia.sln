@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreInfrastructure.Mvc", "C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreInfra", "CoreInfra", "{5775EA8E-183A-4CCD-A6D8-21739C761202}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pdia.Entities", "Pdia.Entities\Pdia.Entities.csproj", "{1946AC7A-06E5-4CFE-B196-0102DFA82579}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{EE2DA952-7719-4399-9DE9-E6D0F9EE4FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE2DA952-7719-4399-9DE9-E6D0F9EE4FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE2DA952-7719-4399-9DE9-E6D0F9EE4FDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1946AC7A-06E5-4CFE-B196-0102DFA82579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1946AC7A-06E5-4CFE-B196-0102DFA82579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1946AC7A-06E5-4CFE-B196-0102DFA82579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1946AC7A-06E5-4CFE-B196-0102DFA82579}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

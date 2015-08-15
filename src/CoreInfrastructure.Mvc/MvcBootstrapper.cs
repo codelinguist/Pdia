@@ -26,7 +26,7 @@ namespace CoreArchitecture.Mvc
             }
         }
         //Internal bootstrap implementor
-        public Bootstrapper _bootstrapper;
+        public Bootstrapper _bootstrapper = new Bootstrapper();
 
         public void Initialize(Func<IKernel> createKernelCallback)
         {
