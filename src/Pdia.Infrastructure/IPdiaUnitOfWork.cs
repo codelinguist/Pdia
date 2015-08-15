@@ -15,6 +15,7 @@ namespace Pdia.Infrastructure
         IRepository<Child> ChildRepository { get; }
         IRepository<Clinic> ClinicRepository { get; }
         IRepository<Page> PageRepository { get; }
+        IRepository<Parenting> ParentingRepository { get; }
         IRepository<Patient> PatientRepository { get; }
         IRepository<Pediatrician> PediatricianRepository { get; }
         IRepository<Post> PostRepository { get; }

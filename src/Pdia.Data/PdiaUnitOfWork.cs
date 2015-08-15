@@ -23,6 +23,7 @@ namespace Pdia.Data
         public IRepository<Child> _childRepository;
         public IRepository<Clinic> _clinicRepository;
         public IRepository<Page> _pageRepository;
+        public IRepository<Parenting> _parentingRepository;
         public IRepository<Patient> _patientRepositry;
         public IRepository<Pediatrician> _pediatricianRepository;
         public IRepository<Post> _postRepository;
@@ -85,6 +86,18 @@ namespace Pdia.Data
                     _pageRepository = new EntityRepository<Page>(_dbContext);
                 }
                 return _pageRepository;
+            }
+        }
+
+        public IRepository<Parenting> ParentingRepository
+        {
+            get
+            {
+                if (_parentingRepository == null)
+                {
+                    _parentingRepository = new EntityRepository<Parenting>(_dbContext);
+                }
+                return _parentingRepository;
             }
         }
 
