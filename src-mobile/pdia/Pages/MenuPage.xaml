@@ -24,6 +24,10 @@ Padding="10">
 
 
 			<StackLayout Orientation="Horizontal" Spacing="20" Padding="0,10">
+				<StackLayout.GestureRecognizers>
+					<TapGestureRecognizer Tapped="NotificationsTapped">
+					</TapGestureRecognizer>
+				</StackLayout.GestureRecognizers>
 				<Image Source="notify_ico" WidthRequest="30"/>
 				<Label Text="Notifications" VerticalOptions="Center"/>
 			</StackLayout>

@@ -1,12 +1,47 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="pdia.NotificationPage"
-xmlns:xcontrols="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms">
+xmlns:xcontrols="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms" BackgroundColor="White" Title="Notifications">
 	<ContentPage.Content>
 		<ScrollView>
 			<StackLayout>
-				<StackLayout Padding="20">
-					<StackLayout HorizontalOptions="Center" Orientation="Horizontal">
-						<xcontrols:CircleImage Source="" />
+				<StackLayout>
+					<StackLayout  Padding="20" HorizontalOptions="Center" >
+						<StackLayout Orientation="Horizontal">
+							<StackLayout WidthRequest="150">
+								<xcontrols:CircleImage Source="profpic_doc2" WidthRequest="70" HorizontalOptions="Center"/>
+								<Label Text="Ephraim Ambingan, MD" FontAttributes="Bold" TextColor="#1ecaa7" XAlign="Center"/>
+							</StackLayout>
+							<Image Source="stet_ico" WidthRequest="40"/>
+							<StackLayout WidthRequest="150">
+								<xcontrols:CircleImage Source="profpic_child" WidthRequest="70" HorizontalOptions="Center"/>
+								<Label Text="Daniel Seville" FontAttributes="Bold" TextColor="#1ecaa7" XAlign="Center"/>
+							</StackLayout>
+						</StackLayout>
+						<Label Text="Has requested to be your son's pedia." TextColor="Gray" XAlign="Center"/>
+						<StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="15">
+							<Button BorderRadius="5" BackgroundColor="#1ecaa7" Text="Accept" WidthRequest="100"/>
+							<Button BorderRadius="5" BackgroundColor="Red" Text="Deny" WidthRequest="100"/>
+						</StackLayout>
+					</StackLayout>
+					<ContentView HeightRequest="1" BackgroundColor="Silver"/>
+
+					<StackLayout  Padding="20" HorizontalOptions="Center" >
+						<StackLayout Orientation="Horizontal">
+							<StackLayout WidthRequest="150">
+								<xcontrols:CircleImage Source="profpic_doc2" WidthRequest="70" HorizontalOptions="Center"/>
+								<Label Text="Selena Gomez" FontAttributes="Bold" TextColor="#1ecaa7" XAlign="Center"/>
+							</StackLayout>
+							<Image Source="follow_ico" WidthRequest="40"/>
+							<StackLayout WidthRequest="150">
+								<xcontrols:CircleImage Source="profpic_child" WidthRequest="70" HorizontalOptions="Center"/>
+								<Label Text="Sarah Seville" FontAttributes="Bold" TextColor="#1ecaa7" XAlign="Center"/>
+							</StackLayout>
+						</StackLayout>
+						<Label Text="Has requested to be your son's pedia." TextColor="Gray" XAlign="Center"/>
+						<StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="15">
+							<Button BorderRadius="5" BackgroundColor="#1ecaa7" Text="Accept" WidthRequest="100"/>
+							<Button BorderRadius="5" BackgroundColor="Red" Text="Deny" WidthRequest="100"/>
+						</StackLayout>
 					</StackLayout>
 
 				</StackLayout>

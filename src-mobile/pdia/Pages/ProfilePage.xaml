@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="pdia.ProfilePage"
+xmlns:xcontrols="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms">
+	<ContentPage.Content>
+		<StackLayout>
+			<ContentView Padding="30">
+				<xcontrols:CircleImage Source="profpic_child" WidthRequest="120" HorizontalOptions="Center">
+				</xcontrols:CircleImage>
+			</ContentView>
+
+			<Label XAlign="Center" Text="Daniel Seville" FontSize="40"/>
+			<Label/>
+			<Label Text="9 y/o" TextColor="Gray"/>
+			<Label Text="Male" TextColor="Gray"/>
+
+
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
