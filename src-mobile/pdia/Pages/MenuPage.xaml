@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="pdia.MenuPage" xmlns:xcontrols="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+BackgroundColor="#1ecaa7" Title="Menu" Icon="leftmenu_ico"
+Padding="10">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<Style TargetType="Label">
+				<Setter Property="FontSize" Value="Default" />
+				<Setter Property="FontFamily" Value="Arial Narrow" />
+			</Style>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<ContentPage.Content>
+		<StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<xcontrols:CircleImage Source="profpic_child" WidthRequest="80">
+				</xcontrols:CircleImage>
+				<Label VerticalOptions="Center" HorizontalOptions="FillAndExpand" Text="Hello Ralph!"/>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" Spacing="20" Padding="0,10">
+				<Image Source="babybook_ico" WidthRequest="30"/>
+				<Label Text="Baby Book" VerticalOptions="Center"/>
+			</StackLayout>
+
+
+			<StackLayout Orientation="Horizontal" Spacing="20" Padding="0,10">
+				<Image Source="notify_ico" WidthRequest="30"/>
+				<Label Text="Notifications" VerticalOptions="Center"/>
+			</StackLayout>
+
+
+			<StackLayout Orientation="Horizontal" Spacing="20" Padding="0,10">
+				<Image Source="map_ico" WidthRequest="30"/>
+				<Label Text="Nearby Pedia" VerticalOptions="Center"/>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal" Spacing="20" Padding="0,10">
+				<Image Source="messageico" WidthRequest="30"/>
+				<Label Text="Messages" VerticalOptions="Center"/>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal" Spacing="20" Padding="0,10">
+				<Image Source="profile_ico" WidthRequest="30"/>
+				<Label Text="Profile" VerticalOptions="Center"/>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal" Spacing="20" Padding="0,10">
+				<Image Source="settings_ico" WidthRequest="30"/>
+				<Label Text="Settings" VerticalOptions="Center"/>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal" Spacing="20" Padding="0,10">
+				<Image Source="logout_ico" WidthRequest="30"/>
+				<Label Text="Logout" VerticalOptions="Center"/>
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

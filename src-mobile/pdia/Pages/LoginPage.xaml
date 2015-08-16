@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="pdia.LoginPage" BackgroundImage="sign_bg">
+	<ContentPage.Content>
+		<StackLayout VerticalOptions="Center">
+			<StackLayout>
+				<Image Source="logo" HorizontalOptions="Center" WidthRequest="104" />
+				<Image Source="title" HorizontalOptions="Center" WidthRequest="93" />
+				<Label Text="Enhance your baby's growth" FontSize="Default" TextColor="#1ecaa7" XAlign="Center"/>
+				<ContentView HeightRequest="300" >
+
+					<StackLayout VerticalOptions="End">
+						<Image Source="regfb_btn" HorizontalOptions="Center" WidthRequest="300" >
+							<Image.GestureRecognizers>
+								<TapGestureRecognizer Tapped="RegisterFbTapped" />
+							</Image.GestureRecognizers>
+						</Image>
+						<Image Source="regpedia_btn" HorizontalOptions="Center" WidthRequest="300">
+							<Image.GestureRecognizers>
+								<TapGestureRecognizer Tapped="RegisterPediaTapped" />
+							</Image.GestureRecognizers>
+						</Image>
+					</StackLayout>
+				</ContentView>
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

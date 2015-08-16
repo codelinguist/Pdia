@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="pdia.NewsFeedPage"
+xmlns:xcontrols="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms" BackgroundColor="#dde8e6" Padding="4" Title="News Feed">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout Padding="4">
+				<StackLayout BackgroundColor="White" Padding="10" Spacing="10">
+					<StackLayout Orientation="Horizontal" >
+						<xcontrols:CircleImage Source="profpic_child" WidthRequest="50" />
+						<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+							<Label Text="Daniel Seville" FontSize="Large" TextColor="#1ecaa7" />
+							<Label Text="4 minutes ago" TextColor="Gray" FontSize="Micro"/>
+						</StackLayout>
+					</StackLayout>
+
+						<Label TextColor="#3f3f3f" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer metus risus, malesuada eu auctor nec, tristique a nunc."/>
+						<Image Source="postpic"/>
+				</StackLayout>
+
+
+
+
+				<StackLayout BackgroundColor="White"  >
+					<StackLayout  BackgroundColor="#1ecaa7" Orientation="Horizontal" Spacing="10" Padding="5">
+						<Image Source="notify_ico" WidthRequest="30" />
+						<Label Text="Announcement" FontSize="Large"/>
+					</StackLayout>
+
+					<StackLayout Padding="10">
+						<StackLayout Orientation="Horizontal" >
+							<xcontrols:CircleImage Source="profpic_doc" WidthRequest="50" />
+							<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+								<Label Text="Dr. Bloodseeker" FontSize="Large" TextColor="#1ecaa7" />
+								<Label Text="July 15, 2015" TextColor="Gray" FontSize="Micro"/>
+							</StackLayout>
+						</StackLayout>
+
+						<Label TextColor="#3f3f3f" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer metus risus, malesuada eu auctor nec, tristique a nunc."/>
+					</StackLayout>
+				</StackLayout>
+
+
+
+
+				<StackLayout BackgroundColor="White" Padding="10" Spacing="10">
+					<StackLayout Orientation="Horizontal" >
+						<xcontrols:CircleImage Source="profpic_child" WidthRequest="50" />
+						<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+							<Label Text="Daniel Seville" FontSize="Large" TextColor="#1ecaa7" />
+							<Label Text="4 minutes ago" TextColor="Gray" FontSize="Micro"/>
+						</StackLayout>
+					</StackLayout>
+
+						<Label TextColor="#3f3f3f" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer metus risus, malesuada eu auctor nec, tristique a nunc."/>
+						<Image Source="postpic"/>
+				</StackLayout>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="pdia.RegisterPediaPage" 
+xmlns:xcontrols="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms">
+
+		<ContentPage.Resources>
+			<ResourceDictionary>
+				<Style TargetType="xcontrols:ExtendedEntry">
+					<Setter Property="TextColor" Value="#3f3f3f"/>
+					<Setter Property="PlaceholderTextColor" Value="Gray"/>
+				</Style>
+				<Style TargetType="ContentView">
+					<Setter Property="Padding" Value="20,5"/>
+				</Style>
+			</ResourceDictionary>
+		</ContentPage.Resources>
+	<ContentPage.Content>
+		<ScrollView >
+		<StackLayout VerticalOptions="Center" Padding="20" Spacing="2">
+
+			<Image Source="logo" HorizontalOptions="Center" WidthRequest="64" />
+
+			<Label Text="Register as Pediatrician" FontSize="Default" TextColor="#1ecaa7" XAlign="Center"/>
+
+			<ContentView   BackgroundColor="White">
+				<xcontrols:ExtendedEntry BackgroundColor="Transparent" Placeholder="*First Name"  />
+			</ContentView>
+			<ContentView   BackgroundColor="White">
+				<xcontrols:ExtendedEntry BackgroundColor="Transparent" Placeholder="*Last Name"/>
+			</ContentView>
+			<ContentView  BackgroundColor="White">
+				<xcontrols:ExtendedEntry BackgroundColor="Transparent" Placeholder="*License No."/>
+			</ContentView>
+			<ContentView   BackgroundColor="White">
+				<xcontrols:ExtendedEntry BackgroundColor="Transparent" Placeholder="*Email"/>
+			</ContentView>
+			<ContentView   BackgroundColor="White">
+				<xcontrols:ExtendedEntry BackgroundColor="Transparent" Placeholder="*Contact No."/>
+			</ContentView>
+			<ContentView   BackgroundColor="White">
+				<xcontrols:ExtendedEntry BackgroundColor="Transparent" Placeholder="*Password"/>
+			</ContentView>
+			<Label/>
+			<Image Source="register_btn" HorizontalOptions="Center"/>
+		</StackLayout>
+
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>
