@@ -18,6 +18,11 @@ namespace pdia
 			page.Detail =new NavigationPage (new NotificationPage (){ }){ BarBackgroundColor = Color.FromHex ("#1ecaa7") };
 			page.IsPresented = false;
 		}
+
+		void ChildTapped(object sender, EventArgs e)
+		{
+			(App.Instance.MainPage as MasterDetailPage).Detail = new ProfilePage ();
+		}
 	}
 }
 

@@ -13,6 +13,9 @@ Padding="10">
 	<ContentPage.Content>
 		<StackLayout>
 			<StackLayout Orientation="Horizontal">
+				<StackLayout.GestureRecognizers>
+					<TapGestureRecognizer Tapped="ChildTapped"/>
+				</StackLayout.GestureRecognizers>
 				<xcontrols:CircleImage Source="profpic_child" WidthRequest="80">
 				</xcontrols:CircleImage>
 				<Label VerticalOptions="Center" HorizontalOptions="FillAndExpand" Text="Hello Ralph!"/>

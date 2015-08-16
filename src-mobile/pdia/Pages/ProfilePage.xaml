@@ -1,19 +1,29 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="pdia.ProfilePage"
-xmlns:xcontrols="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms">
+xmlns:xcontrols="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms" BackgroundColor="White" Padding="10">
 	<ContentPage.Content>
-		<StackLayout>
-			<ContentView Padding="30">
-				<xcontrols:CircleImage Source="profpic_child" WidthRequest="120" HorizontalOptions="Center">
-				</xcontrols:CircleImage>
-			</ContentView>
+		<ScrollView>
+			<StackLayout>
+				<ContentView Padding="30">
+					<xcontrols:CircleImage Source="profpic_child" WidthRequest="120" HorizontalOptions="Center">
+					</xcontrols:CircleImage>
+				</ContentView>
 
-			<Label XAlign="Center" Text="Daniel Seville" FontSize="40"/>
-			<Label/>
-			<Label Text="9 y/o" TextColor="Gray"/>
-			<Label Text="Male" TextColor="Gray"/>
+				<Label XAlign="Center" Text="Daniel Seville" FontSize="40" TextColor="#1ecaa7"/>
+				<Label/>
+				<Label Text="9 y/o" TextColor="Gray" XAlign="Center" />
+				<Label Text="Male" TextColor="Gray" XAlign="Center"/>
 
 
-		</StackLayout>
+				<Label XAlign="Center" Text="Recent Posts" FontSize="Large" FontAttributes="Bold" TextColor="#1ecaa7"/>
+
+				<xcontrols:WrapLayout Orientation="Horizontal" >
+					<Image Source="postpic" WidthRequest="165"/>
+					<Image Source="postpic2" WidthRequest="165"/>
+					<Image Source="postpic3" WidthRequest="165"/>
+				</xcontrols:WrapLayout >
+
+			</StackLayout>
+		</ScrollView>
 	</ContentPage.Content>
 </ContentPage>

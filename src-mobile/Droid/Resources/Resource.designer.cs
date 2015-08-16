@@ -214,43 +214,49 @@ namespace pdia.Droid
 			public const int postpic = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public const int profile_ico = 2130837520;
+			public const int postpic2 = 2130837520;
 			
 			// aapt resource value: 0x7f020011
-			public const int profpic_child = 2130837521;
+			public const int postpic3 = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public const int profpic_child2 = 2130837522;
+			public const int profile_ico = 2130837522;
 			
 			// aapt resource value: 0x7f020013
-			public const int profpic_doc = 2130837523;
+			public const int profpic_child = 2130837523;
 			
 			// aapt resource value: 0x7f020014
-			public const int profpic_doc2 = 2130837524;
+			public const int profpic_child2 = 2130837524;
 			
 			// aapt resource value: 0x7f020015
-			public const int profpic_mother = 2130837525;
+			public const int profpic_doc = 2130837525;
 			
 			// aapt resource value: 0x7f020016
-			public const int regfb_btn = 2130837526;
+			public const int profpic_doc2 = 2130837526;
 			
 			// aapt resource value: 0x7f020017
-			public const int register_btn = 2130837527;
+			public const int profpic_mother = 2130837527;
 			
 			// aapt resource value: 0x7f020018
-			public const int regpedia_btn = 2130837528;
+			public const int regfb_btn = 2130837528;
 			
 			// aapt resource value: 0x7f020019
-			public const int settings_ico = 2130837529;
+			public const int register_btn = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int sign_bg = 2130837530;
+			public const int regpedia_btn = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public const int stet_ico = 2130837531;
+			public const int settings_ico = 2130837531;
 			
 			// aapt resource value: 0x7f02001c
-			public const int title = 2130837532;
+			public const int sign_bg = 2130837532;
+			
+			// aapt resource value: 0x7f02001d
+			public const int stet_ico = 2130837533;
+			
+			// aapt resource value: 0x7f02001e
+			public const int title = 2130837534;
 			
 			static Drawable()
 			{
