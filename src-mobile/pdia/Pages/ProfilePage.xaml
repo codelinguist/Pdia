@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="pdia.ProfilePage"
-xmlns:xcontrols="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms" BackgroundColor="White" Padding="10">
+xmlns:xcontrols="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms" BackgroundColor="White" Padding="10" Title="Child Profile">
 	<ContentPage.Content>
 		<ScrollView>
 			<StackLayout>

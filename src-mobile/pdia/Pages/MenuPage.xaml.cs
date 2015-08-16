@@ -21,7 +21,9 @@ namespace pdia
 
 		void ChildTapped(object sender, EventArgs e)
 		{
-			(App.Instance.MainPage as MasterDetailPage).Detail = new ProfilePage ();
+			var page = App.Instance.MainPage as MasterDetailPage;
+			page.Detail =new NavigationPage (new ProfilePage (){ }){ BarBackgroundColor = Color.FromHex ("#1ecaa7") };
+			page.IsPresented = false;
 		}
 	}
 }
